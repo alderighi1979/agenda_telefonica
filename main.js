@@ -2,7 +2,9 @@ const form = document.getElementById('formulario');
 const arrayNome = [];
 const arrayTel = [];
 let linhas = "";
-
+const telefoneMask = IMask(inputTelefone, {
+    mask: '(00) 00000-0000' 
+});
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
