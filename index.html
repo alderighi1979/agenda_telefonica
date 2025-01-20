@@ -17,7 +17,7 @@
         </header>
         <form id="formulario">
             <label for="inputNome">Nome:</label>
-            <input type="text" id="inputNome" required placeholder="Nome Completo">
+            <input type="text" id="inputNome" required placeholder="Nome Completo" oninput="this.value=this.value.toUpperCase()">
             <label for="inputTelefone">Telefone:</label>
             <input type="tel" id="inputTelefone" required placeholder="Nº de Telefone">
             <button type="submit" id="btn_adicionar">+ Adicionar Contatos +</button>
